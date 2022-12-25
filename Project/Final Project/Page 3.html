@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information technology services</title>
+    <link rel="shortcut icon" type="image" href="AI 002.png">
+    <link rel="stylesheet" href="Style.css">
+    <script src="Functions.JS"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("AasBkdNFz7ksWiCID");
+})();
+</script>
+    
+    
+</head><body onload="timerController()">
+    <div class="Timer">
+        <nav class="DT"> 
+            <span id="dName">Day</span> ,
+            <span id="dNum">00</span> 
+            <span id="month">MM</span> ,
+            <span id="year">0000</span>
+        </nav>
+
+        <nav class="DT">
+            <span id="hours">00</span> : 
+            <span id="min">00</span>
+            <span id="pe">AM</span>
+        </nav>
+        
+       </div>
+
+       <div class="Top">
+        <h3 id="Top01"> Creations ; Develop the future !</h3>
+       </div>
+       <div class="Top02">
+       <img src="Home.png" alt="" id="Top0201" onclick="NextH()">
+       </div>
+
+
+       <div class="SQL">
+        <img src="PS 029.png" alt="" height="30%" width="30%" id="SQL">
+        <h1 id="IS">Select an I.T. service</h1>
+       </div>
+       <div class="Register">
+        <span id="db" class="btsql" onclick="placeOrder04db(1 ,0 ,0)">Servers </span> |
+        <span id="ds" class="btsql" onclick="placeOrder04db(0 ,1 ,0)">Hardware Support</span> |
+        <span id="da" class="btsql" onclick="placeOrder04db(0 ,0 ,1)">Camera System</span>
+    </div>
+
+    <form method="post" class="form04">
+        <div class="form04A">
+        <input type="text" placeholder="Company name" id="name">
+        <input type="email" placeholder="E-mail" is="email">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Order details"></textarea>
+        <span id="order04" onclick="sendEmail()">Order</span>
+        <span id="yo04"></span>
+        </div>
+    </form>
+
+   
+
+       <div class="Top">
+        <h3 id="Top01"> Creations ; Develop the future !</h3>
+       </div>
+       <div class="Top02">
+       <img src="Home.png" alt="" id="Top0201" onclick="NextH()">
+      
+       
+
+
+</body>
+</html>
